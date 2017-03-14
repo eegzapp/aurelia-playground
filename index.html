@@ -1,0 +1,35 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>HTML Test File</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body onload="loadHandler()">
+
+        <audio id="drip" onended="console.log('done!')">
+            <source src="http://www.noiseaddicts.com/samples_1w72b820/3740.mp3" type="audio/mp3"/>
+        </audio>
+        <form name="myForm">
+            <input data-toggle="popover" data-content="Some content inside the popover" class="checkrange" id="myNumberInput" type="number" min="5" max="20" value="50"/>
+            <span>out of range</span>
+        </form>
+
+        <button onclick="checkValidation()">validate</button>
+
+    </body>
+</html>

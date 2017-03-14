@@ -1,0 +1,14 @@
+
+
+.checkrange:in-range {
+    background-color:green;
+}
+.checkrange:out-of-range {
+    background-color:pink;
+}
+.checkrange:out-of-range + span {
+    border: 1px solid green
+}
+.checkrange + span {
+    border: 1px solid red
+}
